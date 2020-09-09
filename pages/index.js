@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import {Navbar} from '../components/Navbar'
+import Hero from '../components/Hero'
+import { Heading } from 'evergreen-ui'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -8,7 +10,8 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navbar/>
+      <Hero bgColor='#4299E1' ><Heading color='white' width='500px' textAlign='center' size={700}>We create fast, reliable, responsive web applications</Heading></Hero>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
